@@ -1,4 +1,4 @@
-import { PersonalInformation, AdressInformation, AccountInformation } from "./components";
+import { PersonalInformation } from "./components";
 import './App.css';
 
 const App = () => {
@@ -6,8 +6,6 @@ const App = () => {
   return (
     <>
       <PersonalInformation />
-      <AdressInformation />
-      <AccountInformation />
     </>
   )
 }
