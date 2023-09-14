@@ -50,7 +50,7 @@ const AccountInformation = () => {
                     </Button>
                     <Button
                         variant="contained"
-                        color="secondary"
+                        color="primary"
                         type="submit"
                         style={{marginTop: 20, marginLeft: 5}}
                     >
