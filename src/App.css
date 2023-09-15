@@ -6,8 +6,8 @@
     transform: translate(-50%, -50%);
 }
 
-.AppForm {
+.card {
     display: flex;
     flex-direction: column;
-    gap: 7px;
+    gap: 8px;
 }
