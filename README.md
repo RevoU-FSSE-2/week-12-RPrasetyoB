@@ -1,4 +1,6 @@
-# Simple Multi step React App + TypeScript + Vite
+# Simple Multi step React App
+
+Assignment project build React app registration form with multistep
 
 This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
 
