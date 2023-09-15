@@ -26,6 +26,13 @@ If you are developing a production application, we recommend updating the config
 - Optionally add `plugin:@typescript-eslint/stylistic-type-checked`
 - Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and add `plugin:react/recommended` & `plugin:react/jsx-runtime` to the `extends` list
 
+## Ingredient
+- React JS
+- Typescript
+- vite
+- Ant design
+- Formik
+- Yup
 
 ## Deployment
 
@@ -35,5 +42,6 @@ https://week12-rpb.netlify.app/
 ```
 git clone
 npm install
+npm run dev
 ```
 
