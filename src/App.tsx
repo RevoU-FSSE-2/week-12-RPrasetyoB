@@ -1,7 +1,10 @@
 import { PersonalInformation } from "./components";
 import './App.css';
+import React from 'react';
 
-const App = () => {
+
+
+const App: React.FC = () => {
 
   return (
     <>
@@ -11,3 +14,6 @@ const App = () => {
 }
 
 export default App
+
+
+

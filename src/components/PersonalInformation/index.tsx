@@ -1,4 +1,4 @@
-import { Formik, FormikProps, useFormik, ErrorMessage} from 'formik';
+import { Formik, FormikProps, useFormik} from 'formik';
 // import { TextField, Button, Card, CardContent, CardActions } from '@mui/material';
 import { Input, Button, Card, DatePicker } from 'antd'
 // import Typography from '@mui/material/Typography';
@@ -28,18 +28,6 @@ const initPersonal = {
   username: '',
   password: '',
 }
-
-// interface AddressFormProps {
-//   onFinish: (values: AddressFormData) => void;
-//   initialValues: AddressFormData;
-// }
-
-// interface AddressFormData {
-//   streetAddress: string;
-//   city: string;
-//   state: string;
-//   zipCode: string;
-// }
 
 const validationPersonal = yup.object().shape({
   fullname: yup.string()
@@ -153,6 +141,7 @@ const PersonalInformation = () => {
                     </div>
                     <Button
                       danger
+                      className='btnNext'
                       type="primary"
                       style={{ marginTop: 20 }}
                       onClick={() => {handleNext(formik)}}
@@ -163,85 +152,51 @@ const PersonalInformation = () => {
                 )}
                 {step === 2 && (
                   <Card title="Address Information" style={{ width: 300, display: 'flex', flexDirection: 'column', gap:'1px'}}>
-                    <div className="form-group">
-                      <label htmlFor="street">
-                        <span className="star">*</span> Street Address
-                      </label>
-                      <Input
-                        type="text"
-                        name="street"
-                        id="street"
-                        className="form-control"
-                        value={formMik.values.street}
-                        onChange={formMik.handleChange('street')}
-                        status={formMik.errors.street && 'error'}
+                    <div>
+                      <p>Street Address : </p>
+                      <Input name={'street'}
+                          value={formMik.values.street}
+                          onChange={formMik.handleChange('street')}
+                          status={formMik.errors.street && 'error'}
                       />
-                      <ErrorMessage
-                        name="street"
-                        component="div"
-                        className="error-message"
-                      />
+                      {formMik.errors.street && (
+                          <p className={'error-message'}>{formMik.errors.street}</p>
+                      )}
                     </div>
-
-                    <div className="form-group">
-                      <label htmlFor="city">
-                        <span className="star">*</span> City
-                      </label>
-                      <Input
-                        type="text"
-                        name="city"
-                        id="city"
-                        className="form-control"
-                        value={formMik.values.city}
-                        onChange={formMik.handleChange('city')}
-                        status={formMik.errors.city && 'error'}
+                    <div>
+                      <p>City : </p>
+                      <Input name={'city'}
+                          value={formMik.values.city}
+                          onChange={formMik.handleChange('city')}
+                          status={formMik.errors.city && 'error'}
                       />
-                      <ErrorMessage
-                        name="city"
-                        component="div"
-                        className="error-message"
-                      />
+                      {formMik.errors.city && (
+                          <p className={'error-message'}>{formMik.errors.city}</p>
+                      )}
                     </div>
-
-                    <div className="form-group">
-                      <label htmlFor="state">
-                        <span className="star">*</span> State
-                      </label>
-                      <Input
-                        type="text"
-                        name="state"
-                        id="state"
-                        className="form-control"
+                    <div>
+                      <p>State : </p>
+                      <Input name={'state'}
                         value={formMik.values.state}
                         onChange={formMik.handleChange('state')}
                         status={formMik.errors.state && 'error'}
                       />
-                      <ErrorMessage
-                        name="state"
-                        component="div"
-                        className="error-message"
-                      />
-                    </div>
-
-                    <div className="form-group">
-                      <label htmlFor="zipCode">
-                        <span className="star">*</span> Zip Code
-                      </label>
-                      <Input
-                        type="number"
-                        name="zipCode"
-                        id="zipCode"
-                        className="form-control"
+                        {formMik.errors.state && (
+                        <p className={'error-message'}>{formMik.errors.state}</p>
+                      )}
+                  </div>
+                  <div>
+                      <p>Zip Code : </p>
+                      <Input name={'zipCode'}
+                        type='number'
                         value={formMik.values.zipCode}
                         onChange={formMik.handleChange('zipCode')}
                         status={formMik.errors.zipCode && 'error'}
                       />
-                      <ErrorMessage
-                        name="zipCode"
-                        component="div"
-                        className="error-message"
-                      />
-                    </div>
+                      {formMik.errors.zipCode && (
+                          <p className={'error-message'}>{formMik.errors.zipCode}</p>
+                      )}
+                  </div>
                       <Button
                         danger
                         type='default'
@@ -252,6 +207,7 @@ const PersonalInformation = () => {
                       </Button>
                     <Button
                       danger
+                      className='btnNext'
                       type='primary'
                       style={{ marginTop: 20 }}
                       onClick={()=>handleNext(formik)}                        
