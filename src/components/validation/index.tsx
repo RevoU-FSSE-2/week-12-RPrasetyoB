@@ -28,5 +28,5 @@ export const accountInfoValidation = yup.object().shape({
     username: yup.string().required('Username is required'),
     password: yup.string()
         .min(8, 'Password must be at least 8 characters')
-        .matches(/^(?=.*[a-z])(?=.*[A-Z])(?=.*[0-9])$/)
+        .matches(/^(?=.*[a-zA-Z])(?=.*[0-9])/, "Password must be alphanumeric")
 })
