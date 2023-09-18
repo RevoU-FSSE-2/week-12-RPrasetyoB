@@ -4,7 +4,7 @@ import { personalInfoValidation, addressInfoValidation, accountInfoValidation } 
 import "../../App.css";
 import { Formik, Form } from 'formik';
 import { Button, Steps, Card, Divider, Result } from 'antd';
-import dayjs from 'dayjs';
+
 
 const RegistrationForm : React.FC = ()=> {
     const [currentStep, setCurrentStep] = useState(0);
@@ -130,6 +130,7 @@ useEffect(()=> {
                                             <Button
                                                 type='primary'
                                                 htmlType='submit'
+                                                className='submit-button'
                                             >
                                                 Submit
                                             </Button>
