@@ -21,7 +21,7 @@ const PersonalInfo: React.FC = ()=> {
         {({ field, meta }: FieldProps) => (
           <MultiForm.Item
             label='Full Name'
-            labelCol={{ span:20 }}
+            labelCol={{ span: 6 }}
             validateStatus={meta.touched && meta.error ? 'error' : undefined}
             help={meta.touched && meta.error ? meta.error : undefined}
             >
@@ -33,8 +33,8 @@ const PersonalInfo: React.FC = ()=> {
       <Field name='email'>
         {({ field, meta }: FieldProps) => (
           <MultiForm.Item
-            label='Email address'
-            labelCol={{ span:20 }}
+            label='Email'
+            labelCol={{ span: 6 }}
             validateStatus={meta.touched && meta.error ? 'error' : undefined}
             help={meta.touched && meta.error ? meta.error : undefined}
             >
@@ -47,7 +47,7 @@ const PersonalInfo: React.FC = ()=> {
         {({ field, meta }: FieldProps) => (
           <MultiForm.Item
             label='Birthdate'
-            labelCol={{ span:20 }}
+            labelCol={{ span: 6 }}
             validateStatus={meta.touched && meta.error ? 'error' : undefined}
             help={meta.touched && meta.error ? meta.error : undefined}
             >

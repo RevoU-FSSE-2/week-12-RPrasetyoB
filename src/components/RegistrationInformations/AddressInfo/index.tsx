@@ -10,7 +10,7 @@ const AddresslInfo: React.FC = ()=> {
         {({ field, meta }: FieldProps) => (
           <MultiForm.Item
             label='Street'
-            labelCol={{ span:20 }}
+            labelCol={{ span:8 }}
             validateStatus={meta.touched && meta.error ? 'error' : undefined}
             help={meta.touched && meta.error ? meta.error : undefined}
             >
@@ -23,7 +23,7 @@ const AddresslInfo: React.FC = ()=> {
         {({ field, meta }: FieldProps) => (
           <MultiForm.Item
             label='State'
-            labelCol={{ span:20 }}
+            labelCol={{ span:8 }}
             validateStatus={meta.touched && meta.error ? 'error' : undefined}
             help={meta.touched && meta.error ? meta.error : undefined}
             >
@@ -36,7 +36,7 @@ const AddresslInfo: React.FC = ()=> {
         {({ field, meta }: FieldProps) => (
           <MultiForm.Item
             label='City'
-            labelCol={{ span:20 }}
+            labelCol={{ span:8 }}
             validateStatus={meta.touched && meta.error ? 'error' : undefined}
             help={meta.touched && meta.error ? meta.error : undefined}
             >
@@ -49,7 +49,7 @@ const AddresslInfo: React.FC = ()=> {
         {({ field, meta }: FieldProps) => (
           <MultiForm.Item
             label='Zip code'
-            labelCol={{ span:20 }}
+            labelCol={{ span:8 }}
             validateStatus={meta.touched && meta.error ? 'error' : undefined}
             help={meta.touched && meta.error ? meta.error : undefined}
             >

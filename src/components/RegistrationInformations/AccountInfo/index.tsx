@@ -10,7 +10,7 @@ const AccountInfo: React.FC = ()=> {
         {({ field, meta }: FieldProps) => (
           <MultiForm.Item
             label='Username'
-            labelCol={{ span:20 }}
+            labelCol={{ span:6 }}
             validateStatus={meta.touched && meta.error ? 'error' : undefined}
             help={meta.touched && meta.error ? meta.error : undefined}
             >
@@ -23,7 +23,7 @@ const AccountInfo: React.FC = ()=> {
         {({ field, meta }: FieldProps) => (
           <MultiForm.Item
             label='Password'
-            labelCol={{ span:20 }}
+            labelCol={{ span: 7.5 }}
             validateStatus={meta.touched && meta.error ? 'error' : undefined}
             help={meta.touched && meta.error ? meta.error : undefined}
             >
