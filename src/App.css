@@ -1,13 +1,15 @@
-.App {
-    width: 300px;
+.form-container {
+    display: flex;
+    flex-direction: row;
+    width: 600px;
     position: absolute;
     top: 50%;
     left: 50%; 
     transform: translate(-50%, -50%);
 }
 
-.card {
+/* .card {
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     gap: 8px;
-}
+} */

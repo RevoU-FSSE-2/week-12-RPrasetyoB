@@ -1,1 +1,1 @@
-export { default as PersonalInformation } from "./PersonalInformation";
+export { default as RegistrationForm } from './RegistrationForm'
